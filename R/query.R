@@ -27,7 +27,6 @@ cache_read <- function(query_id) {
     header=TRUE,
     encoding="UTF-8",
     showProgress=TRUE,
-    keepLeadingZeros=TRUE
   ))
 }
 
@@ -213,7 +212,6 @@ query_get_result <- function(id, dev=FALSE) {
     header=TRUE,
     encoding="UTF-8",
     showProgress=TRUE,
-    keepLeadingZeros=TRUE
   )
 
   if (!is.null(result)) {
@@ -286,7 +284,6 @@ query_lambda <- function(params, cached, dev) {
     header=TRUE,
     encoding="UTF-8",
     showProgress=TRUE,
-    keepLeadingZeros=TRUE
   )
 
   if (!is.null(result)) {
